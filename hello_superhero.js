@@ -1,3 +1,4 @@
 import { randomSuperhero } from 'superheroes';
 
-console.log(randomSuperhero());
+const superheroes = Array.from({ length: 5 }, () => randomSuperhero());
+console.log(superheroes.join(' - '));
